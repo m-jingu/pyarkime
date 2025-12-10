@@ -69,11 +69,20 @@ class SessionsAPI(BaseAPI):
         Returns:
             Search results
         """
+        # Convert milliseconds to seconds for startTime/stopTime
+        # Arkime API expects seconds (10 digits), not milliseconds (13 digits)
+        start_time_seconds = (
+            start_time // 1000 if start_time is not None and start_time > 10000000000 else start_time
+        )
+        stop_time_seconds = (
+            stop_time // 1000 if stop_time is not None and stop_time > 10000000000 else stop_time
+        )
+
         params = self._prepare_params(
             expression=expression,
             date=date,
-            startTime=start_time,
-            stopTime=stop_time,
+            startTime=start_time_seconds,
+            stopTime=stop_time_seconds,
             start=start,
             length=length,
             fields=fields,
@@ -119,11 +128,20 @@ class SessionsAPI(BaseAPI):
         Returns:
             CSV string
         """
+        # Convert milliseconds to seconds for startTime/stopTime
+        # Arkime API expects seconds (10 digits), not milliseconds (13 digits)
+        start_time_seconds = (
+            start_time // 1000 if start_time is not None and start_time > 10000000000 else start_time
+        )
+        stop_time_seconds = (
+            stop_time // 1000 if stop_time is not None and stop_time > 10000000000 else stop_time
+        )
+
         params = self._prepare_params(
             expression=expression,
             date=date,
-            startTime=start_time,
-            stopTime=stop_time,
+            startTime=start_time_seconds,
+            stopTime=stop_time_seconds,
             fields=fields,
             **kwargs,
         )
@@ -468,11 +486,18 @@ class AsyncSessionsAPI(BaseAPI):
         **kwargs: Any,
     ) -> dict[str, Any]:
         """Search sessions (async)."""
+        start_time_seconds = (
+            start_time // 1000 if start_time is not None and start_time > 10000000000 else start_time
+        )
+        stop_time_seconds = (
+            stop_time // 1000 if stop_time is not None and stop_time > 10000000000 else stop_time
+        )
+
         params = self._prepare_params(
             expression=expression,
             date=date,
-            startTime=start_time,
-            stopTime=stop_time,
+            startTime=start_time_seconds,
+            stopTime=stop_time_seconds,
             start=start,
             length=length,
             fields=fields,
@@ -504,11 +529,20 @@ class AsyncSessionsAPI(BaseAPI):
         **kwargs: Any,
     ) -> str:
         """Search sessions and return CSV (async)."""
+        # Convert milliseconds to seconds for startTime/stopTime
+        # Arkime API expects seconds (10 digits), not milliseconds (13 digits)
+        start_time_seconds = (
+            start_time // 1000 if start_time is not None and start_time > 10000000000 else start_time
+        )
+        stop_time_seconds = (
+            stop_time // 1000 if stop_time is not None and stop_time > 10000000000 else stop_time
+        )
+
         params = self._prepare_params(
             expression=expression,
             date=date,
-            startTime=start_time,
-            stopTime=stop_time,
+            startTime=start_time_seconds,
+            stopTime=stop_time_seconds,
             fields=fields,
             **kwargs,
         )
