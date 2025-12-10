@@ -1,0 +1,811 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://m-jingu.github.io/pyarkime/api/">
+      
+      
+        <link rel="prev" href="..">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>API - pyarkime</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#api-reference" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="pyarkime" class="md-header__button md-logo" aria-label="pyarkime" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            pyarkime
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              API
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="pyarkime" class="md-nav__button md-logo" aria-label="pyarkime" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    pyarkime
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#client-classes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Client Classes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Client Classes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arkimeclient" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ArkimeClient
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#asyncarkimeclient" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AsyncArkimeClient
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        API Endpoints
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="API Endpoints">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sessions-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sessions API
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hunt-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hunt API
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#views-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Views API
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stats-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stats API
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crons-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Crons API
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shortcuts-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Shortcuts API
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#error-handling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Error Handling
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#models" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Models
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#for-more-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        For More Information
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#client-classes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Client Classes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Client Classes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arkimeclient" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ArkimeClient
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#asyncarkimeclient" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AsyncArkimeClient
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        API Endpoints
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="API Endpoints">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sessions-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sessions API
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hunt-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hunt API
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#views-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Views API
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stats-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stats API
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crons-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Crons API
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shortcuts-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Shortcuts API
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#error-handling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Error Handling
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#models" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Models
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#for-more-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        For More Information
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="api-reference">API Reference</h1>
+<p>This document provides a reference for all API endpoints available in pyarkime.</p>
+<h2 id="client-classes">Client Classes</h2>
+<h3 id="arkimeclient">ArkimeClient</h3>
+<p>Synchronous client for Arkime API.</p>
+<pre><code class="language-python">from pyarkime import ArkimeClient
+
+client = ArkimeClient(
+    base_url=&quot;https://arkime.example.com&quot;,
+    username=&quot;your_username&quot;,
+    password=&quot;your_password&quot;
+)
+</code></pre>
+<h3 id="asyncarkimeclient">AsyncArkimeClient</h3>
+<p>Asynchronous client for Arkime API.</p>
+<pre><code class="language-python">from pyarkime import AsyncArkimeClient
+
+client = AsyncArkimeClient(
+    base_url=&quot;https://arkime.example.com&quot;,
+    username=&quot;your_username&quot;,
+    password=&quot;your_password&quot;
+)
+</code></pre>
+<h2 id="api-endpoints">API Endpoints</h2>
+<h3 id="sessions-api">Sessions API</h3>
+<p>Search and manage sessions.</p>
+<pre><code class="language-python"># Search sessions
+results = client.sessions.search(expression=&quot;ip.src == 192.168.1.1&quot;)
+
+# Get session detail
+detail = client.sessions.get_detail(node_name=&quot;node1&quot;, session_id=&quot;session123&quot;)
+
+# Add tags
+client.sessions.add_tags(ids=[&quot;node1:session123&quot;], tags=[&quot;suspicious&quot;])
+
+# Download PCAP
+pcap_data = client.sessions.get_pcap(ids=[&quot;node1:session123&quot;])
+</code></pre>
+<h3 id="hunt-api">Hunt API</h3>
+<p>Create and manage packet search jobs.</p>
+<pre><code class="language-python"># Create a hunt
+hunt = client.hunt.create(
+    name=&quot;My Hunt&quot;,
+    query=&quot;ip.src == 192.168.1.1&quot;,
+    size=1000
+)
+
+# List hunts
+hunts = client.hunt.list()
+
+# Get hunt details
+hunt_details = client.hunt.get(hunt_id=&quot;hunt123&quot;)
+
+# Cancel a hunt
+client.hunt.cancel(hunt_id=&quot;hunt123&quot;)
+</code></pre>
+<h3 id="views-api">Views API</h3>
+<p>Create and manage database views.</p>
+<pre><code class="language-python"># List views
+views = client.views.list()
+
+# Create a view
+from pyarkime.models import ArkimeView
+view = ArkimeView(
+    name=&quot;My View&quot;,
+    expression=&quot;ip.src == 192.168.1.1&quot;
+)
+created_view = client.views.create(view)
+
+# Get view
+view_details = client.views.get(view_id=&quot;view123&quot;)
+</code></pre>
+<h3 id="stats-api">Stats API</h3>
+<p>Get statistics and health information.</p>
+<pre><code class="language-python"># Get stats
+stats = client.stats.get_stats()
+
+# Get dstats
+dstats = client.stats.get_dstats()
+
+# Get ES stats
+es_stats = client.stats.get_esstats()
+</code></pre>
+<h3 id="crons-api">Crons API</h3>
+<p>Manage periodic queries.</p>
+<pre><code class="language-python"># List crons
+crons = client.crons.list()
+
+# Create a cron
+from pyarkime.models import ArkimeQuery
+query = ArkimeQuery(
+    name=&quot;Daily Check&quot;,
+    query=&quot;ip.src == 192.168.1.1&quot;,
+    action=&quot;tag&quot;,
+    enabled=True
+)
+created_cron = client.crons.create(query)
+</code></pre>
+<h3 id="shortcuts-api">Shortcuts API</h3>
+<p>Create and manage shortcuts.</p>
+<pre><code class="language-python"># List shortcuts
+shortcuts = client.shortcuts.list()
+
+# Create a shortcut
+from pyarkime.models import Shortcut
+shortcut = Shortcut(
+    name=&quot;My Shortcut&quot;,
+    expression=&quot;ip.src == 192.168.1.1&quot;
+)
+created_shortcut = client.shortcuts.create(shortcut)
+</code></pre>
+<h2 id="error-handling">Error Handling</h2>
+<p>The library provides custom exception classes for different error types:</p>
+<pre><code class="language-python">from pyarkime import (
+    ArkimeError,
+    ArkimeAPIError,
+    ArkimeAuthError,
+    ArkimeConnectionError,
+    ArkimeNotFoundError,
+)
+
+try:
+    results = client.sessions.search(expression=&quot;invalid query&quot;)
+except ArkimeAPIError as e:
+    print(f&quot;API error: {e}&quot;)
+    print(f&quot;Status code: {e.status_code}&quot;)
+except ArkimeAuthError as e:
+    print(f&quot;Authentication error: {e}&quot;)
+except ArkimeConnectionError as e:
+    print(f&quot;Connection error: {e}&quot;)
+</code></pre>
+<h2 id="models">Models</h2>
+<p>The library uses Pydantic models for type safety and validation:</p>
+<ul>
+<li><code>ArkimeQuery</code>: Periodic query object</li>
+<li><code>History</code>: History object</li>
+<li><code>Hunt</code>: Hunt object</li>
+<li><code>SessionsQuery</code>: Sessions query parameters</li>
+<li><code>Shortcut</code>: Shortcut object</li>
+<li><code>ESHealth</code>: Elasticsearch health object</li>
+<li><code>ArkimeRole</code>: Role object</li>
+<li><code>ArkimeUser</code>: User object</li>
+<li><code>ArkimeSettings</code>: Settings object</li>
+<li><code>ArkimeColumnLayout</code>: Column layout object</li>
+<li><code>ArkimeInfoColumnLayout</code>: Info column layout object</li>
+<li><code>ArkimeView</code>: View object</li>
+</ul>
+<h2 id="for-more-information">For More Information</h2>
+<p>See the <a href="https://arkime.com/apiv3">official Arkime API documentation</a> for detailed parameter descriptions and response formats.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>
