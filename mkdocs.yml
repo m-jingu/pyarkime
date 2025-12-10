@@ -1,0 +1,9 @@
+site_name: pyarkime
+site_url: https://m-jingu.github.io/pyarkime/
+theme:
+  name: material
+nav:
+  - Home: index.md
+  - API: api.md
+plugins: []
+
