@@ -2,6 +2,8 @@
 
 Python client library for Arkime API v3.x-5.x
 
+**Docs:** https://m-jingu.github.io/pyarkime/  
+
 ## Installation
 
 ```bash
@@ -68,7 +70,7 @@ This library supports all Arkime API v3.x-5.x endpoints:
 
 ## Documentation
 
-Full API documentation is available in the [docs](docs/) directory.
+Online documentation: https://m-jingu.github.io/pyarkime/  
 
 See [examples](examples/) for more usage examples.
 
